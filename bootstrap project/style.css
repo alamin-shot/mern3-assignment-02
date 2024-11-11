@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a clean, modern font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Carousel Styling */
+.carousel-caption h5 {
+    color: black;
+    font-size: 3rem;
+    animation: fadeInDown 1.2s ease;
+}
+
+.carousel-caption a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-caption a:hover {
+    background-color: #0056b3;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 1600px;
+    height: 80vh;
+}
+
+/* Cards Styling */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about-section .row {
+    display: flex;
+    align-items: center;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+.form-control {
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+/* Animation: Fade In Down */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
